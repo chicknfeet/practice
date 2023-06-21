@@ -36,5 +36,5 @@
 @endsection
 
 @section('title')
-    Contact Us Page
+    Registration
 @endsection
