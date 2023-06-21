@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>Thankyou {{$name}}</h1>
-<p>Your message "{{message}}" has been submitted.</p>
+<p>Your message "{{$message}}" has been submitted.</p>
 <p>Submitted by your email address {{$email}}</p>
 @endsection
 
