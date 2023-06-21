@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\landingController;
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\profileController;
+use App\Http\Controllers\eventsController;
+use App\Http\Controllers\newsController;
+use App\Http\Controllers\contactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +25,6 @@ Route::get('/home',[homeController::class,'index'])->name('home');
 Route::get('/profile',[profileController::class,'index'])->name('profile');
 Route::get('/events',[eventsController::class,'index'])->name('events');
 Route::get('/news',[newsController::class,'index'])->name('news');
+
 Route::get('/contact',[contactController::class,'index'])->name('contact');
+Route::post('/contact/submit',[contactController::class,'submit'])->name('contact.submit');
