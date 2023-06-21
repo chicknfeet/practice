@@ -14,6 +14,14 @@
             <a href="{{route('events')}}">Events</a>
             <a href="{{route('news')}}">News</a>
             <a href="{{route('contact')}}">Contact Us</a>
+
+            @if(auth()->check())
+                <a href="{{route('logout')}}">Log Out</a>
+            @else
+                <a href="{{ route('login') }}">Log In</a>
+                <a href="{{ route('registration') }}">Register</a>
+
+            @endif
         </nav>
     </header>
 
