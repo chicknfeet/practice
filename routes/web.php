@@ -32,7 +32,6 @@ Route::post('/contact/submit',[contactController::class,'submit'])->name('contac
 
 Route::get('/login',[AuthController::class,'index'])->name('login');
 
-
 Route::post('/login',[AuthController::class,'login'])->name('login.submit');
 Route::get('/logout',[AuthController::class,'logout'])->middleware('auth')->name('logout');
 Route::get('/register',[AuthController::class,'registration'])->name('registration');
